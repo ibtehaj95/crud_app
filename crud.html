@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+      .heading{
+        color: rgb(28, 95, 13);
+        text-align: center;
+        margin: 2rem;
+      }
+      .heading h1{
+        margin: 0;
+        font-size: 3rem;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="./crud.css"> -->
+</head>
+<body>
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn  btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> -->
+          <div class="heading">
+            <h1 >Your Todo List</h1>
+          </div>
+    </header>
+
+    <main id="main_id">
+      <div class="container col-8">
+        <div class="wrapper_user_input m-5">
+            <div class="input-group mb-3">
+                <input type="text" id="input_field_id" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button id="add_button_id" class="btn btn-outline-success" type="button" id="button-addon2">Add</button>
+              </div>
+        </div>
+
+        <div class="item_list m-5">
+          <ul id="chapter_list_id" class="list-group">
+            <!-- <li id="li-1" class="list-group-item d-flex justify-content-between">
+             <h6 class="d-flex align-items-center flex-grow-1" style="margin: 0%;">Your chapter will appear here</h6>
+             <button class="btn btn-warning mx-1" type="button">Edit</button>
+             <button class="btn btn-danger mx-1" type="button">Remove</button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div id="empty" style="display: flex; justify-content: center;">
+        <img src="./assets/empty-list" alt="empty-list-img">
+      </div>
+      <!-- <div class="clr-btn-cont" id="clr-btn-id" style="display: flex; justify-content: center;">
+        <button class="btn btn-danger mx-1" type="button">Clear All</button>
+      </div> -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./crud.js"></script>
+</body>
+</html>
